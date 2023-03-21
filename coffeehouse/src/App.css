@@ -55,8 +55,9 @@ p {
 }
 
 .header-logo {
-  width: 73px;
+  width: 54px;
   height: auto;
+  margin-bottom: 30px;
 }
 
 .header-title {
