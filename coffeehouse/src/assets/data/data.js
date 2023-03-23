@@ -221,6 +221,34 @@ export let collectionOfRecipes = [{
         "kalories":150,
         "image":"tavis-beck-mAAcR1LR0mo-unsplash.jpg"
     }
-
-
 ];
+
+// let newArrivals = [];
+// var listToIterate = collectionOfProducts;
+// newArrivals  = newArrivals.push(listToIterate[0]);
+// let i=0;
+// while(i != 5)
+// {
+//     var j = Math.floor(Math.random() * (listToIterate.length));
+//     newArrivals  = newArrivals.push(listToIterate[j]);
+//     listToIterate.splice(j, 1); 
+//     i++;
+// }
+// console.log(newArrivals)
+
+
+var listOfNewArrivals = [];
+var listToIterate = collectionOfProducts;
+
+listOfNewArrivals.push(listToIterate.find(item => item.id=1))
+listToIterate.shift();
+
+let i=0;
+while(i!=5) {
+    var random = Math.floor(Math.random() * listToIterate.length);
+    listOfNewArrivals.push(listToIterate[random]);
+    listToIterate.splice(random, 1);         
+    i++;
+}
+    
+export default listOfNewArrivals;
