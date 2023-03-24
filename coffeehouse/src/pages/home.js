@@ -1,24 +1,24 @@
 import React, { Component } from "react";
 import HeroHome from "../components/hero-home/hero-home";
-import ProductCatalogueCard from "../components/product-catalogue/product-catalogue-card";
+import ProductCatalogueCard, {} from "../components/product-catalogue/product-catalogue-card";
 import listOfNewArrivals, { collectionOfProducts } from "../assets/data/data";
 import _, { map } from 'underscore';
 
-function Home(props){
-    var newArrivals = listOfNewArrivals;
-    console.log(listOfNewArrivals)
+class Home extends React.Component {
+    constructor(props){
+        super(props);
 
-    const data = 'Data from parent to child';
-
+    }
+    render(){
     return (<div><HeroHome/>
     <section>
     <h2>New arrivals</h2>
-    <ProductCatalogueCard dataFromParentToChild = {data}/>
+    {<ProductCatalogueCard/>}
     </section>
     </div>)
         
         
-    }
+    }}
 
 
 export default Home;

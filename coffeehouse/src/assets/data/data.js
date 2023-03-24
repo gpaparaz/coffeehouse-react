@@ -2,12 +2,12 @@ export let collectionOfProducts = [
     {
         "id":1,
         "category":"blend",
-        "product-name":"Arabic blend",
+        "productName":"Arabic blend",
         "preview":"Balanced, creamy and deliciously familiar",
         "price":3.99,
-        "image-name":"3604380.jpg",
-        "product-stars": 4,
-        "detail-preview":"A selection of Arabica for connoisseurs. Fine blend with a sweet taste and balanced aroma, soft on the palate and with chocolaty aftertastes. Very low caffeine content.",
+        "imageName":"3604380.jpg",
+        "productStars": 4,
+        "detailPreview":"A selection of Arabica for connoisseurs. Fine blend with a sweet taste and balanced aroma, soft on the palate and with chocolaty aftertastes. Very low caffeine content.",
         "details":"Set of 125 g. \n Lorem ipsum dolor sit amet, consectetur adipiscing elit. Condimentum sed iaculis est gravida integer. Nec vestibulum ut non vitae est. Elit facilisis diam cras platea cursus.",
         "characteristics": {
             "intensity":4,
@@ -21,138 +21,223 @@ export let collectionOfProducts = [
     {
         "id":2,
         "category":"blend",
-        "product-name":"Colombian taste",
+        "productName":"Colombian taste",
         "preview":"Sip and savor this single-origin Colombian coffee with a round body and persistent taste",
         "price":6.99,
-        "image-name":"5074397.jpg"
+        "imageName":"5074397.jpg",
+        "productStars": null,
+        "detailPreview": null,
+        "details":null,
+        "characteristics": null,
+        "description": null
     },
     {
         "id":3,
         "category":"blend",
-        "product-name":"Fresh blend",
+        "productName":"Fresh blend",
         "preview":"This coffee is characterized by persistent flavors, with notes of grass and fresh earth",
         "price":8.99,
-        "image-name":"stubby_coffee_bags_mockup_perspective.jpg"
+        "imageName":"stubby_coffee_bags_mockup_perspective.jpg",
+        "productStars": null,
+        "detailPreview": null,
+        "details":null,
+        "characteristics": null,
+        "description": null
     },
     {
         "id":4,
         "category":"blend",
-        "product-name":"Dark roast blend",
+        "productName":"Dark roast blend",
         "preview":"A medium dark roast reveals its intensity and aromas in a quick and easy sip",
         "price":5.99,
-        "image-name":"Small-Paper-Coffee-Bag-Mockup.jpg"
+        "imageName":"Small-Paper-Coffee-Bag-Mockup.jpg",
+        "productStars": null,
+        "detailPreview": null,
+        "details":null,
+        "characteristics": null,
+        "description": null
     },
     {
         "id":5,
         "category":"blend",
-        "product-name":"Latin American blend",
+        "productName":"Latin American blend",
         "preview":"Serve yourself a lightly roasted Latin American coffee with a strong taste, but with a delicate softness.",
         "price":5.99,
-        "image-name":"Free-Coffee-Branding-Packaging-Pouch-Mockup.jpg"
+        "imageName":"Free-Coffee-Branding-Packaging-Pouch-Mockup.jpg",
+        "productStars": null,
+        "detailPreview": null,
+        "details":null,
+        "characteristics": null,
+        "description": null
     },
     {
         "id":6,
         "category":"blend",
-        "product-name":"Aromatic blend",
+        "productName":"Aromatic blend",
         "preview":"The shortest and clearest roast in our range, a symbol of elegance and a reflection of its aromatic profile",
         "price":7.99,
-        "image-name":"2284401.jpg"
+        "imageName":"2284401.jpg",
+        "productStars": null,
+        "detailPreview": null,
+        "details":null,
+        "characteristics": null,
+        "description": null
     },
     {
         "id":7,
         "category":"capsule",
-        "product-name":"Cappuccino",
+        "productName":"Cappuccino",
         "preview":"Balanced, creamy and deliciously familiar",
         "price":3.99,
-        "image-name":"7ef32e119467269.609df967b1b19.jpg"
+        "imageName":"7ef32e119467269.609df967b1b19.jpg",
+        "productStars": null,
+        "detailPreview": null,
+        "details":null,
+        "characteristics": null,
+        "description": null
     },
     {
         "id":8,
         "category":"capsule",
-        "product-name":"Mocaccino",
+        "productName":"Mocaccino",
         "preview":"Gently toasted with notes of bitter cocoa. This blend makes this cup of coffee rich and balanced.",
         "price":14.99,
-        "image-name":"compostable-coffee-capsule-mockup-stacked.jpg"
+        "imageName":"compostable-coffee-capsule-mockup-stacked.jpg",
+        "productStars": null,
+        "detailPreview": null,
+        "details":null,
+        "characteristics": null,
+        "description": null
     },
     {
         "id":9,
         "category":"capsule",
-        "product-name":"Caramel",
+        "productName":"Caramel",
         "preview":"Expertly roasted coffee to enhance acidulous and caramelized hints of lemon and a chocolaty finish",
         "price":7.99,
-        "image-name":"large-boxes-for-coffee-capsule-mockup-stacked.jpg"
+        "imageName":"large-boxes-for-coffee-capsule-mockup-stacked.jpg",
+        "productStars": null,
+        "detailPreview": null,
+        "details":null,
+        "characteristics": null,
+        "description": null
     },
     {
         "id":10,
         "category":"capsule",
-        "product-name":"Exotic espresso",
+        "productName":"Exotic espresso",
         "preview":"An intense, exotic and velvety espresso, made exclusively with Brazilian Arabica",
         "price":3.99,
-        "image-name":"AA006.jpg"
+        "imageName":"AA006.jpg",
+        "productStars": null,
+        "detailPreview": null,
+        "details":null,
+        "characteristics": null,
+        "description": null
     },
     {
         "id":11,
         "category":"capsule",
-        "product-name":"American blend",
+        "productName":"American blend",
         "preview":"Arabica coffee from Latin America subjected to medium and long roasting ",
         "price":4.99,
-        "image-name":"7ef32e119467269.609df967b1b19.jpg"
+        "imageName":"7ef32e119467269.609df967b1b19.jpg",
+        "productStars": null,
+        "detailPreview": null,
+        "details":null,
+        "characteristics": null,
+        "description": null
     },
     {
         "id":12,
         "category":"capsule",
-        "product-name":"Spicy espresso",
+        "productName":"Spicy espresso",
         "preview":"The long and dark roasting, typical of the South, enhances the spicy side of this coffee",
         "price":2.99,
-        "image-name":"coffee-capsule-mockup_391934-326.jpg"
+        "imageName":"coffee-capsule-mockup_391934-326.jpg",
+        "productStars": null,
+        "detailPreview": null,
+        "details":null,
+        "characteristics": null,
+        "description": null
     },
     {
         "id":13,
         "category":"gift",
-        "product-name":"Almond mix",
+        "productName":"Almond mix",
         "preview":"This delicious blend is an explosion of bold notes of ripe berries, combined with a delicate hint of almond.",
         "price":12.99,
-        "image-name":"jon-tyson-fIVD9x3JvDo-unsplash.jpg"
+        "imageName":"jon-tyson-fIVD9x3JvDo-unsplash.jpg",
+        "productStars": null,
+        "detailPreview": null,
+        "details":null,
+        "characteristics": null,
+        "description": null
     },
     {
         "id":14,
         "category":"gift",
-        "product-name":"Aromatic blend",
+        "productName":"Aromatic blend",
         "preview":"The shortest and clearest roast in our range, a symbol of elegance and a reflection of its aromatic profile",
         "price":8.99,
-        "image-name":"2284401.jpg"
+        "imageName":"2284401.jpg",
+        "productStars": null,
+        "detailPreview": null,
+        "details":null,
+        "characteristics": null,
+        "description": null
     },
     {
         "id":15,
         "category":"gift",
-        "product-name":"Various mix",
+        "productName":"Various mix",
         "preview":"Balanced blend of clearly roasted Arabica from Latin America, enriched with Robusta from Vietnam",
         "price":11.99,
-        "image-name":"coffee-capsule-dispenser-mockup-front-view.jpg"
+        "imageName":"coffee-capsule-dispenser-mockup-front-view.jpg",
+        "productStars": null,
+        "detailPreview": null,
+        "details":null,
+        "characteristics": null,
+        "description": null
     },
     {
         "id":16,
         "category":"gift",
-        "product-name":"Arabica blend",
+        "productName":"Arabica blend",
         "preview":"Black blend, intense and with a slightly salty malty note typical of monsoon Arabica",
         "price":10.99,
-        "image-name":"nousnou-iwasaki-myPzH34VYK4-unsplash.jpg"
+        "imageName":"nousnou-iwasaki-myPzH34VYK4-unsplash.jpg",
+        "productStars": null,
+        "detailPreview": null,
+        "details":null,
+        "characteristics": null,
+        "description": null
     },
     {
         "id":18,
         "category":"gift",
-        "product-name":"Caramel",
+        "productName":"Caramel",
         "preview":"Expertly roasted coffee to enhance acidulous and caramelized hints of lemon and a chocolaty finish",
         "price":7.99,
-        "image-name":"large-boxes-for-coffee-capsule-mockup-stacked.jpg"
+        "imageName":"large-boxes-for-coffee-capsule-mockup-stacked.jpg",
+        "productStars": null,
+        "detailPreview": null,
+        "details":null,
+        "characteristics": null,
+        "description": null
     },
     {
         "id":19,
         "category":"gift",
-        "product-name":"Mix America",
+        "productName":"Mix America",
         "preview":"A delicious blend of coffees from Latin America and Asia / Pacific",
         "price":16.99,
-        "image-name":"coffee-capsule-set-mockup-floating.jpg"
+        "imageName":"coffee-capsule-set-mockup-floating.jpg",
+        "productStars": null,
+        "detailPreview": null,
+        "details":null,
+        "characteristics": null,
+        "description": null
     }
 
 ];
