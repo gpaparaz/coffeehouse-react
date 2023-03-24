@@ -7,13 +7,39 @@ import _, { map } from 'underscore';
 class Home extends React.Component {
     constructor(props){
         super(props);
-
     }
     render(){
+        function displayItems() {
+            var newArrivals = listOfNewArrivals;   
+            var listOfObjects = [];
+            /// fare un ciclo for che itera su newArrivals, costruisce un oggetto, e restituisca product catalogue card con contenuto l'oggetto
+            let i;
+            for(i=0; i<newArrivals.length; i++) {
+                var objectProduct = {
+                    id: newArrivals[i].id,
+                    category: newArrivals[i].category,
+                    productName: newArrivals[i].productName,
+                    preview: newArrivals[i].preview,
+                    price: newArrivals[i].price,
+                    imageName: newArrivals[i].imageName,
+                    productStars: newArrivals[i].productStars,
+                    detailPreview: newArrivals[i].detailPreview,
+                    details: newArrivals[i].details,
+                    description: newArrivals[i].description,            
+                }
+                listOfObjects.push(objectProduct);
+                console.log(objectProduct)
+            } 
+            return listOfObjects;
+        }
+
+
     return (<div><HeroHome/>
     <section>
     <h2>New arrivals</h2>
-    {<ProductCatalogueCard/>}
+    {displayItems().map((item) => (
+        <p>{item.id}</p>
+    ))}
     </section>
     </div>)
         
