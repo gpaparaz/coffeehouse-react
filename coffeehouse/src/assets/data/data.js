@@ -141,7 +141,7 @@ export let collectionOfProducts = [
         "productName":"American blend",
         "preview":"Arabica coffee from Latin America subjected to medium and long roasting ",
         "price":4.99,
-        "imageName":"7ef32e119467269.609df967b1b19.jpg",
+        "imageName":"7ef32e119467269609df967b1b19.jpg",
         "productStars": null,
         "detailPreview": null,
         "details":null,
