@@ -89,7 +89,7 @@ export let collectionOfProducts = [
         "productName":"Cappuccino",
         "preview":"Balanced, creamy and deliciously familiar",
         "price":3.99,
-        "imageName":"7ef32e119467269.609df967b1b19.jpg",
+        "imageName":"7ef32e119467269609df967b1b19.jpg",
         "productStars": null,
         "detailPreview": null,
         "details":null,
