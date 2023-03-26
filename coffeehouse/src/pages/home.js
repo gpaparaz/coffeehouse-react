@@ -12,7 +12,9 @@ class Home extends React.Component {
      
     return (<div><HeroHome/>
     <section>
-    <h2>New arrivals</h2>
+    <div class="container pt-4">
+    <h2 className="fw-bold">New arrivals</h2>
+    </div>
 
     <ProductCatalogueCard />
     </section>

@@ -31,9 +31,9 @@ class ProductCatalogueCard extends React.Component {
             }
     
     return (<div>
-    <div class="container text-center">
-  <div class="row align-items-center">
-    <div class="col-4">
+    <div className="container text-center">
+  <div className="row align-items-center">
+    <div className="col-lg-4">
     <div className="productCatalogueHome d-flex justify-content-between flex-column">
             <div>
                 <div className="imageProduct"><img src={require(`../../assets/img/${displayItems()[0].imageName}`)} ></img></div>
@@ -50,7 +50,7 @@ class ProductCatalogueCard extends React.Component {
         
         </div>
     </div>
-    <div class="col-4">
+    <div className="col-lg-4">
     <div className="productCatalogueHome d-flex justify-content-between flex-column">
             <div>
                 <div className="imageProduct"><img src={require(`../../assets/img/${displayItems()[1].imageName}`)} ></img></div>
@@ -67,7 +67,7 @@ class ProductCatalogueCard extends React.Component {
         
         </div>
     </div>
-    <div class="col-4">
+    <div className="col-lg-4">
     <div className="productCatalogueHome d-flex justify-content-between flex-column">
             <div>
                 <div className="imageProduct"><img src={require(`../../assets/img/${displayItems()[2].imageName}`)} ></img></div>
@@ -86,8 +86,8 @@ class ProductCatalogueCard extends React.Component {
     </div>
   </div>
 
-<div class="row align-items-center">
-    <div class="col-4">
+<div className="row align-items-center">
+    <div className="col-lg-4">
     <div className="productCatalogueHome d-flex justify-content-between flex-column">
             <div>
                 <div className="imageProduct"><img src={require(`../../assets/img/${displayItems()[3].imageName}`)} ></img></div>
@@ -104,7 +104,7 @@ class ProductCatalogueCard extends React.Component {
         
         </div>
     </div>
-    <div class="col-4">
+    <div className="col-lg-4">
     <div className="productCatalogueHome d-flex justify-content-between flex-column">
             <div>
                 <div className="imageProduct"><img src={require(`../../assets/img/${displayItems()[4].imageName}`)} ></img></div>
@@ -121,7 +121,7 @@ class ProductCatalogueCard extends React.Component {
         
         </div>
     </div>
-    <div class="col-4">
+    <div className="col-lg-4">
     <div className="productCatalogueHome d-flex justify-content-between flex-column">
             <div>
                 <div className="imageProduct"><img src={require(`../../assets/img/${displayItems()[5].imageName}`)} ></img></div>
