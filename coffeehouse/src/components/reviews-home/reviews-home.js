@@ -4,7 +4,7 @@ import style from './reviews-home.css'
 function ReviewsHome() {
     return(
         <div className='container py-5'>
-            <div className="row align-items-center ">
+            <div className="row align-items-center">
                 <div className="col-lg-4 d-flex justify-content-center">
                     <div className="d-flex flex-column align-items-center justify-content-center reviewsHome">
                         <h5>Tizio</h5>
@@ -20,7 +20,7 @@ function ReviewsHome() {
                     </div>
                 </div>
             
-            <div className="col-lg-4 d-flex justify-content-center">
+                <div className="col-lg-4 d-flex justify-content-center">
                     
                 <div className="d-flex flex-column align-items-center justify-content-center reviewsHome">
                     

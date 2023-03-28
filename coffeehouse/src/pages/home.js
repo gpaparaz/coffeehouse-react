@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import AdvantagesHome from "../components/advantages-home/advantages-home";
+import GalleryHome from "../components/gallery-home/gallery-home";
 import HeroHome from "../components/hero-home/hero-home";
 import ProductCatalogueCard, {} from "../components/product-catalogue/product-catalogue-card";
 import ReviewsHome from "../components/reviews-home/reviews-home";
@@ -32,6 +33,13 @@ class Home extends React.Component {
         <h2 className="fw-bold">Reviews</h2>
         </div>
         <ReviewsHome />
+    </section>
+
+    <section>
+        <div class="container text-center pt-5">
+        <h2 className="fw-bold">#coffeehouse</h2>
+        </div>
+        <GalleryHome />
     </section>
     </div>)
         
