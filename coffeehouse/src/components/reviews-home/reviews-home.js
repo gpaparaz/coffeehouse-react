@@ -5,7 +5,7 @@ function ReviewsHome() {
     return (
         <div className='container py-5'>
             <div className="row align-items-center">
-                <div className="col-lg-4 d-flex justify-content-center">
+                <div className="col-lg-4 d-flex justify-content-center  py-3">
                     <div className="d-flex flex-column align-items-center justify-content-center reviewsHome">
                         <h5>Tizio</h5>
                         <div className='flex-row'>
@@ -20,7 +20,7 @@ function ReviewsHome() {
                     </div>
                 </div>
 
-                <div className="col-lg-4 d-flex justify-content-center">
+                <div className="col-lg-4 d-flex justify-content-center py-3">
 
                     <div className="d-flex flex-column align-items-center justify-content-center reviewsHome">
 
@@ -37,7 +37,7 @@ function ReviewsHome() {
 
                     </div>
                 </div>
-                <div className="col-lg-4  d-flex justify-content-center">
+                <div className="col-lg-4  d-flex justify-content-center py-3">
 
                     <div className="d-flex flex-column align-items-center justify-content-center reviewsHome">
 
