@@ -2,7 +2,7 @@
 
 :root {
   --primary-color: #AB3603;
-  --secondary-color:  #ECE0D1;
+  --secondary-color: #ECE0D1;
 }
 
 body {
@@ -11,27 +11,27 @@ body {
   font-family: 'Poppins';
 }
 
-h1 { 
+h1 {
   font-size: 42px;
 }
 
-h2 { 
+h2 {
   font-size: 38px;
 }
 
-h3 { 
+h3 {
   font-size: 34px;
 }
 
-h4 { 
+h4 {
   font-size: 30px;
 }
 
-h5 { 
+h5 {
   font-size: 26px;
 }
 
-h6 { 
+h6 {
   font-size: 22px;
 }
 
@@ -41,6 +41,11 @@ p {
 
 .small-body {
   font-size: 14px;
+}
+
+a {
+  color: var(--secondary-color);
+  text-decoration: underline;
 }
 
 .button {
@@ -65,12 +70,48 @@ p {
   font-size: 38px;
 }
 
-.header a{
+.header a {
   text-decoration: none;
   color: var(--secondary-color);
   padding: 0px 10px;
 }
 
 .icon-secondary-color {
+  color: var(--secondary-color);
+}
+
+.footerTitle {
+  font-family: 'Playfair Display';
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.footer {
+  background-color: #251A11;
+  border-top: 3px solid var(--secondary-color);
+  padding-top: 42px;
+  padding-bottom: 120px;
+}
+
+.footer a {
+  text-decoration: none;
+}
+
+.footer p {
+  font-size: 16px;
+}
+
+.footer ul {
+  list-style: none;
+}
+
+.footerPayment {
+  height: 50px;
+  width: fit-content;
+}
+
+.footerSearch input {
+  background-color: #251A11;
+  border: 1px solid var(--secondary-color);
   color: var(--secondary-color);
 }
