@@ -1,17 +1,17 @@
 .reviewsHome {
     display: flex;
-flex-direction: row;
-justify-content: center;
-align-items: flex-start;
-padding: 25px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 25px;
+    height: 276px;
+    background: #251A11;
+    border: 1px solid var(--secondary-color);
+    border-radius: 20px;
+}
 
-width: 362px;
-height: 376px;
-
-
-background: #251A11;
-/* Background light */
-
-border: 1px solid var(--secondary-color);
-border-radius: 20px;
+.reviewsHome p {
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }

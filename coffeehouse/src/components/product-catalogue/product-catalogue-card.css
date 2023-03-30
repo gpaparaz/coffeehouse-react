@@ -1,16 +1,15 @@
 .productCatalogueHome {
-    width: 362px;
-    height: 520px;
+    min-height: 520px;
     background-color: #251A11;
     padding: 15px 20px 20px;
     margin: 30px;
     border: 1px solid var(--secondary-color);
-border-radius: 20px;
+    border-radius: 20px;
 }
+
 
 .imageProduct {
     height: 208px;
-    width: 322px;
     margin-bottom: 20px;
 }
 
@@ -25,8 +24,8 @@ border-radius: 20px;
     height: 40px;
     display: flex;
     align-items: center;
-padding: 3px 20px;
-border-radius: 10px;
+    padding: 3px 20px;
+    border-radius: 10px;
 }
 
 .button-icon {
@@ -35,6 +34,6 @@ border-radius: 10px;
     display: flex;
     align-items: center;
     padding: 5px 5px;
-border-radius: 10px;
-background-color: var(--primary-color);
+    border-radius: 10px;
+    background-color: var(--primary-color);
 }

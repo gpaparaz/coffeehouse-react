@@ -3,6 +3,7 @@ import listOfNewArrivals, { collectionOfProducts } from "../../assets/data/data"
 import style from "./product-catalogue-card.css";
 import { Heart } from "react-bootstrap-icons";
 import Cart from "react-bootstrap-icons/dist/icons/cart";
+import Button from 'react-bootstrap/Button';
 
 
 class ProductCatalogueCard extends React.Component {
@@ -32,7 +33,7 @@ class ProductCatalogueCard extends React.Component {
 
         return (<div>
             <div className="container text-center">
-                <div className="row align-items-center">
+                <div className="row align-align-items-start">
                     <div className="col-lg-4 d-flex justify-content-center">
                         <div className="productCatalogueHome d-flex justify-content-between flex-column">
                             <div>
@@ -41,10 +42,10 @@ class ProductCatalogueCard extends React.Component {
                                 <p className="text-center">{ displayItems()[ 0 ].preview }</p>
                             </div>
                             <div>
-                                <h5 className="text-center">{ displayItems()[ 0 ].price }</h5>
+                                <h5 className="text-center">{ displayItems()[ 0 ].price } €</h5>
                                 <div className="d-flex justify-content-between mb-2">
-                                    <Heart size={ 28 } className="icon-secondary-color mx-2 button-icon" />
-                                    <span className="button"><Cart size={ 28 } className="icon-secondary-color mx-2" />ADD</span>
+                                    <Button className="icon-secondary-color mx-2 btn-primary"> <Heart size={ 28 } /></Button>
+                                    <Button className="icon-secondary-color mx-2 btn-primary"> <Cart size={ 26 } />ADD</Button>
                                 </div>
                             </div>
 
@@ -58,10 +59,10 @@ class ProductCatalogueCard extends React.Component {
                                 <p className="text-center">{ displayItems()[ 1 ].preview }</p>
                             </div>
                             <div>
-                                <h5 className="text-center">{ displayItems()[ 1 ].price }</h5>
+                                <h5 className="text-center">{ displayItems()[ 1 ].price } €</h5>
                                 <div className="d-flex justify-content-between mb-2">
-                                    <Heart size={ 28 } className="icon-secondary-color mx-2 button-icon" />
-                                    <span className="button"><Cart size={ 28 } className="icon-secondary-color mx-2" />ADD</span>
+                                    <Button className="icon-secondary-color mx-2 btn-primary"> <Heart size={ 28 } /></Button>
+                                    <Button className="icon-secondary-color mx-2 btn-primary"> <Cart size={ 26 } />ADD</Button>
                                 </div>
                             </div>
 
@@ -75,10 +76,10 @@ class ProductCatalogueCard extends React.Component {
                                 <p className="text-center">{ displayItems()[ 2 ].preview }</p>
                             </div>
                             <div>
-                                <h5 className="text-center">{ displayItems()[ 2 ].price }</h5>
+                                <h5 className="text-center">{ displayItems()[ 2 ].price } €</h5>
                                 <div className="d-flex justify-content-between mb-2">
-                                    <Heart size={ 28 } className="icon-secondary-color mx-2 button-icon" />
-                                    <span className="button"><Cart size={ 28 } className="icon-secondary-color mx-2" />ADD</span>
+                                    <Button className="icon-secondary-color mx-2 btn-primary"> <Heart size={ 28 } /></Button>
+                                    <Button className="icon-secondary-color mx-2 btn-primary"> <Cart size={ 26 } />ADD</Button>
                                 </div>
                             </div>
 
@@ -86,7 +87,7 @@ class ProductCatalogueCard extends React.Component {
                     </div>
                 </div>
 
-                <div className="row align-items-center">
+                <div className="row align-items-start">
                     <div className="col-lg-4 d-flex justify-content-center">
                         <div className="productCatalogueHome d-flex justify-content-between flex-column">
                             <div>
@@ -95,10 +96,10 @@ class ProductCatalogueCard extends React.Component {
                                 <p className="text-center">{ displayItems()[ 3 ].preview }</p>
                             </div>
                             <div>
-                                <h5 className="text-center">{ displayItems()[ 3 ].price }</h5>
+                                <h5 className="text-center">{ displayItems()[ 3 ].price } €</h5>
                                 <div className="d-flex justify-content-between mb-2">
-                                    <Heart size={ 28 } className="icon-secondary-color mx-2 button-icon" />
-                                    <span className="button"><Cart size={ 28 } className="icon-secondary-color mx-2" />ADD</span>
+                                    <Button className="icon-secondary-color mx-2 btn-primary"> <Heart size={ 28 } /></Button>
+                                    <Button className="icon-secondary-color mx-2 btn-primary"> <Cart size={ 26 } />ADD</Button>
                                 </div>
                             </div>
 
@@ -112,10 +113,10 @@ class ProductCatalogueCard extends React.Component {
                                 <p className="text-center">{ displayItems()[ 4 ].preview }</p>
                             </div>
                             <div>
-                                <h5 className="text-center">{ displayItems()[ 4 ].price }</h5>
+                                <h5 className="text-center">{ displayItems()[ 4 ].price } €</h5>
                                 <div className="d-flex justify-content-between mb-2">
-                                    <Heart size={ 28 } className="icon-secondary-color mx-2 button-icon" />
-                                    <span className="button"><Cart size={ 28 } className="icon-secondary-color mx-2" />ADD</span>
+                                    <Button className="icon-secondary-color mx-2 btn-primary"> <Heart size={ 28 } /></Button>
+                                    <Button className="icon-secondary-color mx-2 btn-primary"> <Cart size={ 26 } />ADD</Button>
                                 </div>
                             </div>
 
@@ -129,10 +130,10 @@ class ProductCatalogueCard extends React.Component {
                                 <p className="text-center">{ displayItems()[ 5 ].preview }</p>
                             </div>
                             <div>
-                                <h5 className="text-center">{ displayItems()[ 5 ].price }</h5>
+                                <h5 className="text-center">{ displayItems()[ 5 ].price } €</h5>
                                 <div className="d-flex justify-content-between mb-2">
-                                    <Heart size={ 28 } className="icon-secondary-color mx-2 button-icon" />
-                                    <span className="button"><Cart size={ 28 } className="icon-secondary-color mx-2" />ADD</span>
+                                    <Button className="icon-secondary-color mx-2 btn-primary"> <Heart size={ 28 } /></Button>
+                                    <Button className="icon-secondary-color mx-2 btn-primary"> <Cart size={ 26 } />ADD</Button>
                                 </div>
                             </div>
 

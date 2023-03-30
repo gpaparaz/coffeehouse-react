@@ -8,7 +8,7 @@ class FooterComponent extends React.Component {
 
     constructor(props) {
         super(props);
-        this.state = { value: 'Search' };
+        this.state = { value: 'Search...' };
 
         this.handleChange = this.handleChange.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
