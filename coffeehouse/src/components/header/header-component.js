@@ -1,4 +1,4 @@
-import logo from '../assets/img/coffee-house-logo.png';
+import logo from '../../assets/img/coffee-house-logo.png';
 import React from 'react';
 import Cart from 'react-bootstrap-icons/dist/icons/cart';
 import Search from 'react-bootstrap-icons/dist/icons/search';
@@ -53,16 +53,16 @@ function Header() {
             <Cart size={ 25 } className="icon-secondary-color mx-2" />
             <Button onClick={ handleOpen }><Icon.Person size={ 25 } className="icon-secondary-color mx2" /></Button>
             { open ? (
-              <ul className="menu">
-                <li className="menu-item">
-                  <button onClick={ handleMenuOne }>Menu 1</button>
-                </li>
-                <li className="menu-item">
-                  <button onClick={ handleMenuTwo }>Menu 2</button>
-                </li>
-              </ul>
+              <div className="dropdownmenu">
+                <ul className="menu">
+                  <li className="menu-item">
+                    <button onClick={ handleMenuOne }>Menu 1</button>
+                  </li>
+                  <li className="menu-item">
+                    <button onClick={ handleMenuTwo }>Menu 2</button>
+                  </li>
+                </ul></div>
             ) : null }
-            { open ? <div>Is Open</div> : <div>Is Closed</div> }
           </span>
         </div>
       </div>

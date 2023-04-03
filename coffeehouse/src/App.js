@@ -1,5 +1,5 @@
 import './App.css';
-import Header from './components/header-component.js'
+import Header from './components/header/header-component.js'
 import FooterComponent from './components/footer-component';
 import Home from './pages/home';
 import style from './App.css';
