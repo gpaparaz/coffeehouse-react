@@ -3,10 +3,27 @@ import React from 'react';
 import Cart from 'react-bootstrap-icons/dist/icons/cart';
 import Search from 'react-bootstrap-icons/dist/icons/search';
 import * as Icon from 'react-bootstrap-icons';
+import Button from 'react-bootstrap/esm/Button';
 
-class Header extends React.Component {
-  render() {
-    return <nav className="navbar navbar-expand-lg bg-body-tertiary header d-flex justify-content-between">
+function Header() {
+
+  const [ open, setOpen ] = React.useState(false);
+
+  const handleOpen = () => {
+    setOpen(!open);
+  };
+
+  const handleMenuOne = () => {
+    console.log('clicked one'); setOpen(false);
+  };
+
+  const handleMenuTwo = () => {
+    console.log('clicked two'); setOpen(false);
+  };
+
+
+  return (
+    <nav className="navbar navbar-expand-lg bg-body-tertiary header d-flex justify-content-between">
       <div className="container">
         <div>
           <img src={ logo } className="header-logo" />
@@ -32,12 +49,25 @@ class Header extends React.Component {
                 <a className="nav-link" href="#">Contacts</a>
               </li>
             </ul>
-            <Search size={ 25 } className="icon-secondary-color mx-2" /><Cart size={ 25 } className="icon-secondary-color mx-2" /><Icon.Person size={ 25 } className="icon-secondary-color mx2" />
+            <Search size={ 25 } className="icon-secondary-color mx-2" />
+            <Cart size={ 25 } className="icon-secondary-color mx-2" />
+            <Button onClick={ handleOpen }><Icon.Person size={ 25 } className="icon-secondary-color mx2" /></Button>
+            { open ? (
+              <ul className="menu">
+                <li className="menu-item">
+                  <button onClick={ handleMenuOne }>Menu 1</button>
+                </li>
+                <li className="menu-item">
+                  <button onClick={ handleMenuTwo }>Menu 2</button>
+                </li>
+              </ul>
+            ) : null }
+            { open ? <div>Is Open</div> : <div>Is Closed</div> }
           </span>
         </div>
       </div>
     </nav>
-  }
+  )
 
 }
 export default Header;

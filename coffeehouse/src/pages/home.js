@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import AdvantagesHome from "../components/advantages-home/advantages-home";
-import FooterComponent from "../components/footer-component";
 import GalleryHome from "../components/gallery-home/gallery-home";
 import HeroHome from "../components/hero-home/hero-home";
 import ProductCatalogueCard, { } from "../components/product-catalogue/product-catalogue-card";
@@ -42,7 +41,6 @@ class Home extends React.Component {
                 </div>
                 <GalleryHome />
             </section>
-            <FooterComponent />
         </div>)
 
 

@@ -1,5 +1,6 @@
 import './App.css';
-import Header from './components/header-component';
+import Header from './components/header-component.js'
+import FooterComponent from './components/footer-component';
 import Home from './pages/home';
 import style from './App.css';
 import { BrowserRouter, Routes } from 'react-router-dom';
@@ -30,7 +31,8 @@ function App() {
 
       return <div>
             <Header></Header>
-            <Home></Home></div>
+            <Home></Home>
+            <FooterComponent></FooterComponent></div>
 
 }
 
