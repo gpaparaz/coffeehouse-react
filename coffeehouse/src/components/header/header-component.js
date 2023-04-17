@@ -8,8 +8,9 @@ import Button from 'react-bootstrap/esm/Button';
 function Header() {
 
   const [ open, setOpen ] = React.useState(false);
+  const [ openCart, setOpenCart ] = React.useState(false);
 
-  const handleOpen = () => {
+  const openUserMenu = () => {
     setOpen(!open);
   };
 
@@ -19,6 +20,18 @@ function Header() {
 
   const handleMenuTwo = () => {
     console.log('clicked two'); setOpen(false);
+  };
+
+  const openUserMenuCart = () => {
+    setOpenCart(!openCart);
+  };
+
+  const handleMenuOneCart = () => {
+    console.log('clicked one'); setOpenCart(false);
+  };
+
+  const handleMenuTwoCart = () => {
+    console.log('clicked two'); setOpenCart(false);
   };
 
 
@@ -49,9 +62,22 @@ function Header() {
                 <a className="nav-link" href="#">Contacts</a>
               </li>
             </ul>
-            <Search size={ 25 } className="icon-secondary-color mx-2" />
-            <Cart size={ 25 } className="icon-secondary-color mx-2" />
-            <Button onClick={ handleOpen }><Icon.Person size={ 25 } className="icon-secondary-color mx2" /></Button>
+            <Button onClick={ openUserMenu } className="menu-icon"><Search size={ 25 } className="mx-2" /></Button>
+            <Button onClick={ openUserMenuCart } className="menu-icon"><Cart size={ 25 } className="mx-2" /></Button>
+            { openCart ? (
+              <div className="dropdownmenu">
+                <ul className="menu">
+                  <li className="menu-item">
+                    <button onClick={ handleMenuOneCart }>Menu Cart 1</button>
+                  </li>
+                  <li className="menu-item">
+                    <button onClick={ handleMenuTwoCart }>Menu Cart 2</button>
+                  </li>
+                </ul></div>
+            ) : null }
+
+
+            <Button onClick={ openUserMenu } className="menu-icon"><Icon.Person size={ 25 } className="mx2" /></Button>
             { open ? (
               <div className="dropdownmenu">
                 <ul className="menu">
