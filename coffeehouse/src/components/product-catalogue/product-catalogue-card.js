@@ -26,7 +26,7 @@ class ProductCatalogueCard extends React.Component {
                     description: newArrivals[ i ].description,
                 }
                 listOfObjects.push(objectProduct);
-                console.log(objectProduct)
+                // console.log(objectProduct)
             }
             return listOfObjects;
         }

@@ -66,14 +66,28 @@ function Header() {
             <Button onClick={ openUserMenuCart } className="menu-icon"><Cart size={ 25 } className="mx-2" /></Button>
             { openCart ? (
               <div className="dropdownmenu">
-                <ul className="menu">
+                <div className='menu-cart'>
+                  <div className="cart-item d-flex flex-row justify-content-between">
+                    <div className='d-flex flex-column'>
+                      <p>Titolo prodotto</p>
+                      <p>prezzo prodotto</p>
+                    </div>
+                    <img className='cart-item-img' src={ logo } />
+                  </div>
+                  <div className='d-flex  justify-content-between'>
+                    <Button>Vai al carrello</Button>
+                    <Button>Vai alla cassa</Button>
+                  </div>
+                </div>
+                {/* <ul className="menu">
                   <li className="menu-item">
                     <button onClick={ handleMenuOneCart }>Menu Cart 1</button>
                   </li>
                   <li className="menu-item">
                     <button onClick={ handleMenuTwoCart }>Menu Cart 2</button>
                   </li>
-                </ul></div>
+                </ul> */}
+              </div>
             ) : null }
 
 
@@ -82,10 +96,19 @@ function Header() {
               <div className="dropdownmenu">
                 <ul className="menu">
                   <li className="menu-item">
-                    <button onClick={ handleMenuOne }>Menu 1</button>
+                    <button onClick={ handleMenuOne }>Accedi</button>
                   </li>
                   <li className="menu-item">
-                    <button onClick={ handleMenuTwo }>Menu 2</button>
+                    <button onClick={ handleMenuTwo }>Profilo</button>
+                  </li>
+                  <li className="menu-item">
+                    <button onClick={ handleMenuTwo }>Wishlist</button>
+                  </li>
+                  <li className="menu-item">
+                    <button onClick={ handleMenuTwo }>Ordini</button>
+                  </li>
+                  <li className="menu-item">
+                    <button onClick={ handleMenuTwo }>Logout</button>
                   </li>
                 </ul></div>
             ) : null }
